@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>POPup Chat Window</title>
+</head>
+<body>
+    <!-- Chat POPup START -->
+    <div class="chat">
+        <form action="" style="display: none" id="chatForm">
+            <input type="text" class="receiverName" placeholder ="Name">
+            <input type="text" class="receiverEmail" placeholder ="Email">
+            <textarea cols="30" rows="10" class="receiverMessage" placeholder ="Message"></textarea>
+            
+            <button class="chatSend" type="submit">Send</button>
+            <button class="chatClose" onclick="chatDisplay()">Close</button>
+            
+        </form>
+        <button class="startChat" onclick="chatDisplay()">Start Chat</button>
+    </div>
+    
+        <!-- Chat POPup END -->
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
